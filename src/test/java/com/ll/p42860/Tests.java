@@ -31,4 +31,14 @@ public class Tests {
                 2
         );
     }
+
+    @Test
+    @DisplayName("ZBA → 3")
+    void t03() {
+        assertThat(
+                new Solution().solution("ZBA")
+        ).isEqualTo(
+                3
+        );
+    }
 }

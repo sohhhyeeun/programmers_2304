@@ -30,7 +30,7 @@ class Solution {
         for (int i = 0; i < name.length(); i++) {
             char c = name.charAt(i);
 
-            int diff = c - 'A';
+            int diff = Math.min(c - 'A', 'Z' - c + 1);
 
             if (diff > 0) {
                 moveCost = i;
